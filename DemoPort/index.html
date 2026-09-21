@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>재이 | 개발자 프로필</title>
+<meta name="description" content="바이브코딩, Python, HTML5로 아이디어를 빠르게 동작하는 결과물로 만드는 개발자 재이의 프로필 사이트입니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="재이 | 개발자 프로필">
+<meta property="og:description" content="바이브코딩, Python, HTML5로 아이디어를 빠르게 동작하는 결과물로 만드는 개발자 재이.">
+<meta property="og:locale" content="ko_KR">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  // 깜빡임 방지: 저장된 테마를 렌더링 전에 적용
+  try {
+    const saved = localStorage.getItem("theme");
+    if (saved) document.documentElement.dataset.theme = saved;
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="#top">재이<span>.dev</span></a>
+    <nav aria-label="주요 메뉴">
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="테마 전환">
+      <span aria-hidden="true">🌓</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="container hero-inner reveal">
+      <p class="tag">&lt;developer /&gt;</p>
+      <h1>안녕하세요,<br><em>재이</em>입니다.</h1>
+      <p class="lead">바이브코딩으로 아이디어를 빠르게 동작하는 결과물로 만드는 개발자입니다.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">프로젝트 보기</a>
+        <a class="btn" href="#contact">연락하기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container reveal">
+      <h2 class="title"><span>01</span> About</h2>
+      <div class="about">
+        <p>
+          저는 AI와 함께 코드를 만드는 <strong>바이브코딩</strong>으로 아이디어를 빠르게 시제품으로 옮깁니다.
+          Python으로 게임과 자동화 도구를, HTML5로 브라우저에서 바로 실행되는 결과물을 만듭니다.
+        </p>
+        <p>
+          작게 만들어 보고, 직접 써 보고, 계속 다듬는 방식을 좋아합니다.
+          좋은 아이디어는 설명보다 눈에 보이는 결과물로 이야기할 때 가장 잘 전달된다고 믿습니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="skills">
+    <div class="container reveal">
+      <h2 class="title"><span>02</span> Skills</h2>
+      <div class="grid skills">
+        <article class="card">
+          <h3>바이브코딩</h3>
+          <p>AI 코딩 도구를 활용한 빠른 프로토타이핑과 반복 개선</p>
+          <ul class="chips"><li>AI 협업</li><li>프로토타이핑</li><li>반복 개선</li></ul>
+        </article>
+        <article class="card">
+          <h3>Python</h3>
+          <p>자동화 스크립트, 데스크톱 게임 등</p>
+          <ul class="chips"><li>tkinter</li><li>자동화</li><li>알고리즘</li></ul>
+        </article>
+        <article class="card">
+          <h3>HTML5</h3>
+          <p>시맨틱 마크업, Canvas, CSS3, JavaScript 기반 웹</p>
+          <ul class="chips"><li>Canvas</li><li>CSS3</li><li>JavaScript</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container reveal">
+      <h2 class="title"><span>03</span> Projects</h2>
+      <div class="grid" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <section class="section alt" id="contact">
+    <div class="container reveal">
+      <h2 class="title"><span>04</span> Contact</h2>
+      <p class="lead small">협업이나 문의는 언제든 편하게 메일 주세요.</p>
+      <div class="mail-box">
+        <a class="mail" id="mailLink" href="mailto:zzwodmszz@gmail.com">zzwodmszz@gmail.com</a>
+        <button class="btn" id="copyBtn" type="button">이메일 복사</button>
+      </div>
+      <p class="toast" id="toast" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">© 2026 재이. All rights reserved.</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
